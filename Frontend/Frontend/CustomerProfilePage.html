@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="CustomerProfilePageStyles.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <div class="logoImage"> <img src="./images/TradeMaster-01.png" alt="logo"> </div>
+            <div class="login">
+                <a href="login.html"><button>Login</button></a>
+                <a href="signUp.html"><button>Sign Up</button></a>
+            </div>
+
+        </ul>
+    </nav>
+
+    <div>
+        <section id="customer-profile">
+
+            <div class="profile-pic-container">
+                <img id="customer-avatar" src="images/customer-avatar.png" alt="Customer Avatar">
+                <div class="overlay">
+                    <button id="edit-profile-pic">Edit Picture</button>
+                </div>
+            </div>
+
+            <div id="custInfo">
+                <div id="divInfos">
+                    <label class="rightLabels">Name:</label>
+                    <label class="outputs" id="nameOutput">Abbebe Kebede</label>
+                </div>
+                <div id="divInfos">
+                    <label class="rightLabels">Age:</label>
+                    <label class="outputs" id="ageOutput">21</label>
+                </div>
+                <div id="divInfos">
+                    <label class="rightLabels">DateOfBirth:</label>
+                    <label class="outputs" id="DOBOutput">20-08-1990</label>
+                </div>
+                <div id="divInfos">
+                    <label id="rightLabels">Address:</label>
+                    <address id="addressOutput" class="rightLabels">Akaki Kaliti</address>
+                </div>
+                <div id="divInfos">
+                    <label class="rightLabels">Phone Number:</label>
+                    <label class="outputs" id="phoneNumberOutput">0912345678</label>
+                </div>
+                <button id="editProfileBtn" type="button">Edit Profile</button>
+            </div>
+        </section>
+
+
+
+    </div>
+    <script src="customer-profile.js"></script>
+</body>
+
+</html>

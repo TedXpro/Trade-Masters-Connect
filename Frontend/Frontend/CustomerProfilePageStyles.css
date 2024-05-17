@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #edf6f9;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.login {
+    display: flex;
+    gap: 10px
+}
+
+.login button {
+    background-color: #14213d;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: 0.5 ease;
+
+}
+
+.login button:hover {
+    cursor: pointer;
+    background-color: #eff3f9;
+    color: #14213d;
+    border: 1px solid #f8b418;
+
+}
+
+.logoImage img {
+    padding: 0;
+
+    width: 400px;
+    scale: (5);
+}
+
+/* CustomerProfilePageStyles.css */
+#customer-profile {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay button {
+    background-color: #f8b418;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.overlay button:hover {
+    background-color: #ffca4b;
+}
+
+#custInfo {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    background-color: #edf6f9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    transition: .5s ease;
+}
+
+#divInfos{
+    display: block;
+}
+
+#custInfo label {
+    /* display: inline; */
+    margin-bottom: 5px;
+}
+
+/* #custInfo .rightLabels{
+    text-align: left;
+    float: left;
+}
+#custInfo .outputs{
+    text-align: right;
+    float: left;
+    clear: right;
+} */
+
+#editProfileBtn {
+    background-color: #14213d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#editProfileBtn:hover {
+    background-color: #1f2e4b;
+}
